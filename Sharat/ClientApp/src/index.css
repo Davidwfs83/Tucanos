@@ -1,0 +1,89 @@
+﻿
+/*
+    COLORS:
+    CREATE BUTTON:#00a939
+    CREATE BUTTON HOVER:#41b367
+    UPDATE BUTTON:#cd6502
+    UPDATE BUTTON HOVER:#ed9745
+    REMOVE BUTTON:#ad0505d6
+    REMOVE BUTTON HOVER:#d13333d6
+    SPECIALIZED BLOCK BACKGROUND:#fdb613
+    SPECIAZLIED BLOCK BORDER:#585855
+
+
+*/
+
+.btn-sec-block {
+    border: 1px solid #ECECF3;
+    background-color: #F7F7FC;
+    border-radius: 15px;
+    margin: 40px 0px 40px 0px;
+}
+
+.btn-create {
+    background-color: #00a939;
+    font-family: 'Font Awesome 6 Pro';
+    font-weight: 900;
+}
+
+    .btn-create:hover {
+        background-color: #41b367;
+    }
+
+.btn-update {
+    background-color: #cd6502;
+    font-family: 'Font Awesome 6 Pro';
+    font-weight: 900;
+}
+
+    .btn-update:hover {
+        background-color: #ed9745;
+    }
+
+.btn-remove {
+    background-color: #ad0505d6;
+    font-family: 'Font Awesome 6 Pro';
+    font-weight: 900;
+}
+
+    .btn-remove:hover {
+        background-color: #d13333d6;
+    }
+
+.btn-submit {
+}
+
+    .btn-submit:hover {
+    }
+
+
+
+/*Specialized Block For Users My Details Page*/
+.mydetails-block {
+    width: 400px;
+    min-width: 100px;
+    margin: auto;
+    border: 6px solid #585855;
+}
+
+
+
+
+.FormGroup {
+    margin: 0 15px 20px;
+    padding: 0;
+    border-style: none;
+    background-color: #7795f8;
+    will-change: opacity, transform;
+    box-shadow: 0 6px 9px rgba(50, 50, 93, 0.06), 0 2px 5px rgba(0, 0, 0, 0.08), inset 0 1px 0 #829fff;
+    border-radius: 4px;
+}
+
+.FormRow {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-align: center;
+    align-items: center;
+    margin-left: 15px;
+    border-top: 1px solid #819efc;
+}

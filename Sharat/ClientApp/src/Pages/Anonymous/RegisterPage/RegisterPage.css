@@ -1,0 +1,45 @@
+﻿.img {
+    width: 175px;
+    height: 175px;
+    border-radius: 50%;
+    display: block;
+}
+.imgp {
+    margin: 0px auto;
+    width: 175px;
+    height: 175px;
+}
+.repBox {
+    padding: 0px 200px;
+}
+
+.registertitle {
+    font-weight: 500;
+    font-family: 'Font Awesome 6 Pro';
+    font-size: 30px;
+    text-align: center;
+    margin: 10px auto 40px auto;
+}
+.recipt-comp {
+    margin: 10% 25%;
+    border: 1px solid #9b9b9d;
+    box-shadow: 9px 9px;
+    padding-bottom: 7%;
+    background-repeat: no-repeat;
+    background-position: 50% 0;
+    background-size: cover;
+}
+
+.regfield {
+    margin: 8% auto 5% auto;
+    text-align: center;
+}
+.regfield-cap {
+    margin-bottom: 1%;
+    font-size: 20px;
+    color: #5c5050d4
+}
+.regfield-text {
+    font-size: 21px;
+    font-weight: 700;
+}

@@ -1,0 +1,668 @@
+//background
+.bg-white {
+  background-color: $white;
+}
+
+.bg-black {
+  background-color: $black;
+}
+
+.bg-sliver {
+  background-color: $bg-color;
+}
+
+.text-active {
+  color: $active-color;
+}
+
+.text-blue {
+  color: rgb(61, 75, 199)
+}
+
+.text-yellow {
+  color: $yellow;
+}
+
+.text-pink {
+  color: rgb(255, 87, 117);
+}
+
+.bg-green {
+  background-color: #F3FCF5;
+}
+
+.bg-red {
+  background-color: #FFF5F4;
+}
+
+.bg-yellow {
+  background-color: #FFF9F2;
+}
+
+.bg-gray {
+  background-color: #F8F8FC;
+}
+
+.badge {
+  font-size: 12px;
+  font-weight: 500;
+  border-radius: 5px;
+  padding: 6px 6px;
+  position: relative;
+  z-index: 2;
+
+  &.green {
+    background-color: $green;
+  }
+
+  &.red {
+    background-color: $red;
+  }
+
+  &.yellow {
+    background-color: $yellow;
+  }
+
+  &.gray {
+    background-color: $gray;
+  }
+}
+
+.field {
+  margin: 0px 0px 15px 0px;
+
+  .field-cap {
+    font-size: 13px;
+    font-weight: 600;
+    margin: 0px 0px 5px 0px;
+    color: $text-second;
+  }
+
+  .field-caption {
+    font-size: 13px;
+    font-weight: 600;
+    margin: 0px 0px 5px 0px;
+    color: $text-second;
+
+  }
+
+  &.yellow {
+
+    .input,
+    .textarea,
+    select {
+      border: 1px solid $yellow;
+    }
+  }
+
+  &.red {
+
+    .input,
+    .textarea,
+    select {
+      border: 1px solid $red;
+    }
+  }
+
+  &.green {
+
+    .input,
+    .textarea,
+    select {
+      border: 1px solid $green;
+    }
+  }
+}
+
+.field-wrap {
+  position: relative;
+
+  P {
+    margin: 5PX 0PX 0PX 0PX;
+    font-size: 12PX;
+    color: $text-second;
+  }
+
+
+  .icon {
+    background-repeat: no-repeat;
+    background-position: center center;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    height: 40px;
+    width: 40px;
+
+    &.icon-email {
+      background-image: url(../images/icon-email.svg);
+    }
+
+    &.icon-password {
+      background-image: url(../images/icon-lock.svg);
+    }
+  }
+}
+
+.input {
+  width: 100%;
+  display: block;
+  border: 1px solid $border-color;
+  border-radius: 10px;
+  font-size: 14px;
+  padding: 0px 15px;
+  font-weight: 600;
+  height: 40px;
+  transition: all ease 0.3s;
+  background-color: #fff;
+
+  &:disabled {
+    background-color: #eee;
+  }
+
+  &:focus {
+    background-color: #fafafa;
+  }
+}
+
+.select {
+  width: 100%;
+  display: block;
+  border: 1px solid $border-color;
+  border-radius: 10px;
+  font-size: 14px;
+  padding: 0px 15px 0px 15px;
+  font-weight: 600;
+  height: 40px;
+  transition: all ease 0.3s;
+  background-color: #fff;
+
+  &:focus {
+    background-color: #fafafa;
+  }
+}
+
+.textarea {
+  width: 100%;
+  display: block;
+  border: 1px solid $border-color;
+  border-radius: 10px;
+  font-size: 14px;
+  padding: 10px 15px;
+  font-weight: 600;
+  height: 210px;
+  transition: all ease 0.3s;
+  background-color: #fff;
+
+  &:focus {
+    background-color: #fafafa;
+  }
+}
+
+.checkbox {
+  label {
+    display: flex;
+    align-items: center;
+    font-size: 14px;
+    margin: 0px;
+
+    input {
+      margin: 0px 5px 0px 0px;
+    }
+  }
+}
+
+.radio {
+  display: inline-block;
+
+  label {
+    display: flex;
+    align-items: center;
+    font-size: 14px;
+    margin: 0px;
+
+    input {
+      margin: 0px 5px 0px 0px;
+      position: absolute;
+      opacity: 0;
+      visibility: hidden;
+
+      &:checked {
+        ~span {
+          &:before {
+            border: 1px solid $text-color;
+          }
+
+          &:after {
+            width: 10px;
+            height: 10px;
+            background-color: #000;
+            border-radius: 50%;
+            display: block;
+            position: absolute;
+            content: "";
+            top: 5px;
+            left: 3px;
+            border-radius: 10px;
+          }
+        }
+      }
+    }
+
+    span {
+      font-size: 14px;
+      display: block;
+      padding: 0px 0px 0px 23px;
+      position: relative;
+
+      &:before {
+        content: "";
+        display: block;
+        width: 16px;
+        height: 16px;
+        position: absolute;
+        top: 2px;
+        left: 0px;
+        border-radius: 50%;
+        border: 1px solid $border-color;
+      }
+    }
+  }
+}
+
+.switch {
+  display: inline-block;
+  cursor: pointer;
+
+  label {
+    display: flex;
+    align-items: center;
+    font-size: 14px;
+    margin: 0px;
+    cursor: pointer;
+
+    input {
+      margin: 0px 5px 0px 0px;
+      position: absolute;
+      opacity: 0;
+      visibility: hidden;
+
+      &:checked {
+        ~span {
+          &:before {
+            background-color: $text-color;
+          }
+
+          &:after {
+            left: 18px;
+          }
+        }
+      }
+    }
+
+    span {
+      font-size: 14px;
+      display: block;
+      padding: 0px 0px 0px 40px;
+      position: relative;
+      color: $text-second;
+      cursor: pointer;
+
+      &:before {
+        content: "";
+        display: block;
+        width: 32px;
+        height: 17px;
+        position: absolute;
+        top: 2px;
+        left: 0px;
+        background-color: #ECECF3;
+        border-radius: 10px;
+      }
+
+      &:after {
+        width: 13px;
+        height: 13px;
+        background-color: #fff;
+        content: "";
+        display: block;
+        position: absolute;
+        top: 4px;
+        left: 2px;
+        border-radius: 50%;
+        transition: all ease 0.3s;
+      }
+    }
+  }
+}
+
+.button {
+  height: 40px;
+  line-height: 40px;
+  padding: 0px 20px;
+  border: none;
+  outline: none;
+  border-radius: $border-radius;
+  background-color: #fafafa;
+  font-weight: 500;
+  font-size: 14px;
+  text-align: center;
+  display: inline-flex;
+  align-items: center;
+  text-align: center;
+  transition: all ease 0.3s;
+  justify-content: center;
+
+  &.button-large {
+    min-height: 60px;
+    padding: 0px 40px;
+    font-size: 22px;
+  }
+
+  .icon {
+    flex-shrink: 0;
+    margin: 0px 5px 0px 0px;
+    width: 25px;
+    height: 25px;
+    background-repeat: no-repeat;
+    background-position: center center;
+
+    &.icon-push {
+      background-image: url(../images/icon-push.svg);
+    }
+
+    &.icon-plus {
+      background-image: url(../images/icon-plus.svg);
+    }
+
+    &.icon-refresh {
+      background-image: url(../images/icon-refresh.svg);
+    }
+
+    &.icon-filter {
+      background-image: url(../images/icon-filter.svg);
+    }
+
+    &.icon-time {
+      background-image: url(../images/icon-time.svg);
+    }
+
+    &.icon-export {
+      background-image: url(../images/icon-export.svg);
+    }
+
+    &.icon-script {
+      background-image: url(../images/icon-script-white.svg);
+    }
+  }
+
+  &.button-brand {
+    background-color: $text-color;
+    color: #fff;
+
+    &:hover {
+      color: #fff;
+      background-color: lighten($text-color, 10%);
+    }
+  }
+
+  &.button-border {
+    background-color: #fff;
+    color: $text-color;
+    border: 1px solid $border-color;
+
+    &:hover {
+      background-color: #fafafa;
+      color: $text-color;
+    }
+  }
+
+  &.button-danger {
+    background-color: $red;
+    color: #fff;
+    border: 1px solid $red;
+
+    &:hover {
+      background-color: darken($red, 5%);
+      color: #fff;
+    }
+  }
+}
+
+.searchbox {
+  position: relative;
+
+  button {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 40px;
+    bottom: 0px;
+    border-radius: 10px;
+    border: none;
+    outline: none;
+    background-color: transparent;
+    background-image: url(../images/icon-search.svg);
+    background-repeat: no-repeat;
+    background-position: center center;
+  }
+
+  input {
+    height: 40px;
+    line-height: 40px;
+    padding: 0px 10px 0px 10px;
+    text-align: left;
+    border: none;
+    outline: none;
+    border-radius: $border-radius;
+    font-weight: 500;
+    font-size: 14px;
+    text-align: left;
+    background-color: transparent;
+    border: 1px solid $border-color;
+    transition: all ease 0.3s;
+    display: block;
+    width: 100%;
+
+    &:focus {
+      background-color: #fafafa;
+    }
+  }
+}
+
+
+.datepicker-dropdown.datepicker-orient-bottom:before {
+  display: none;
+}
+
+.datepicker-dropdown.datepicker-orient-bottom:after {
+  display: none;
+}
+
+.datepicker {
+  padding: 5px 15px 15px 15px;
+}
+
+.datepicker td,
+.datepicker th {
+  text-align: center;
+  width: 35px;
+  height: 35px;
+
+  border-radius: 8px !important;
+  border: none;
+}
+
+.datepicker.datepicker-dropdown {
+  margin-top: 37px;
+}
+
+.datepicker-switch {
+  font-size: 14px !important;
+  color: $text-color !important;
+
+}
+
+.datepicker .prev {
+  color: transparent;
+  background-image: url(../images/date-prev.svg);
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+
+.datepicker .next {
+  font-size: 14px !important;
+  background-image: url(../images/date-prev.svg);
+  background-repeat: no-repeat;
+  background-position: center center;
+  transform: rotate(180deg);
+  color: transparent;
+}
+
+.datepicker table tr td.active.active,
+.datepicker table tr td.active.disabled,
+.datepicker table tr td.active.disabled.active,
+.datepicker table tr td.active.disabled.disabled,
+.datepicker table tr td.active.disabled:active,
+.datepicker table tr td.active.disabled:hover,
+.datepicker table tr td.active.disabled:hover.active,
+.datepicker table tr td.active.disabled:hover.disabled,
+.datepicker table tr td.active.disabled:hover:active,
+.datepicker table tr td.active.disabled:hover:hover,
+.datepicker table tr td.active.disabled:hover[disabled],
+.datepicker table tr td.active.disabled[disabled],
+.datepicker table tr td.active:active,
+.datepicker table tr td.active:hover,
+.datepicker table tr td.active:hover.active,
+.datepicker table tr td.active:hover.disabled,
+.datepicker table tr td.active:hover:active,
+.datepicker table tr td.active:hover:hover,
+.datepicker table tr td.active:hover[disabled],
+.datepicker table tr td.active[disabled] {
+  background-color: $text-color !important;
+  background-image: none !important;
+}
+
+.datepicker td {
+  font-size: 14px !important;
+}
+
+.datepicker th {
+  color: $text-second;
+  font-size: 10px;
+}
+
+
+.paging {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+
+  span {
+    width: 35px;
+    height: 35px;
+    border-radius: 10px;
+    line-height: 35px;
+    font-size: 16px;
+    color: $text-color;
+    text-align: center;
+  }
+
+  a {
+    width: 35px;
+    height: 35px;
+    border-radius: 10px;
+    line-height: 35px;
+    font-size: 16px;
+    color: $text-color;
+    text-align: center;
+
+    &:hover {
+      background-color: #fafafa;
+    }
+
+    &.current {
+      background-color: $text-color;
+      color: #fff;
+      text-align: center;
+    }
+
+    &.next {
+      background-image: url(../images/next.svg);
+      background-repeat: no-repeat;
+      background-position: center center;
+    }
+
+    &.last {
+      background-image: url(../images/last.svg);
+      background-repeat: no-repeat;
+      background-position: center center;
+    }
+
+    &.prev {
+      background-image: url(../images/next.svg);
+      background-repeat: no-repeat;
+      background-position: center center;
+      transform: rotate(180deg);
+    }
+
+    &.first {
+      background-image: url(../images/last.svg);
+      background-repeat: no-repeat;
+      background-position: center center;
+      transform: rotate(180deg);
+    }
+  }
+}
+
+.score-text {
+
+  font-size: 40px !important;
+  font-weight: 800;
+}
+
+.tab-content>.tab-pane {
+  border: 1px solid #dee2e6;
+  padding: 20px;
+  border-top: none;
+}
+
+.modal {
+  padding: 0px 20px;
+}
+
+.modal-content {
+  border: none;
+  background-color: #fff;
+  border-radius: 10px;
+}
+
+.modal-create {
+  padding: 30px 50px 30px 50px;
+  position: relative;
+
+  @media screen and (max-width: 991px) {
+    padding: 20px 20px;
+  }
+
+  .control {
+    padding-top: 20px;
+
+    .button {
+
+      margin: 0px 10px;
+    }
+  }
+}
+
+.text-second {
+  color: #666;
+}
+
+.font-normal {
+  font-weight: normal;
+}
+
+.text-404 {
+  font-weight: 900;
+  font-size: 60px;
+}

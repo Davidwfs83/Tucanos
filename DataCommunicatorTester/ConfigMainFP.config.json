@@ -1,0 +1,36 @@
+﻿{
+  "ConnectionStrings": {
+    "DatabaseConnectionString": "Host=localhost;Username=postgres;Password=admin1;Database=postgres",
+    "TesterDBConnectionString": "Host=localhost;Username=postgres;Password=admin1;Database=FP_TesterDB"
+
+  },
+  "ConnectionPoolCapacity": {
+    "CapacityforWork": 40,
+    "CapacityforTesting": 40
+  },
+  "NumberOfRowsInTesterDB" : 10,
+  "DBReplication": {
+    "ToolsLocation": {
+      "PGDumpLocation": "C:\\Program Files\\PostgreSQL\\13\\bin",
+      "PSQLLocation": "C:\\Program Files\\PostgreSQL\\13\\bin"
+    },
+    "ToolsArguments": {
+      "PGDumpArguments": "pg_dump --dbname=postgresql://postgres:admin1@127.0.0.1:5432/postgres -f d:\\Flight_DB\\DB_DUMPED.sql",
+      "PSQLArguments": "psql --dbname=postgresql://postgres:admin1@127.0.0.1:5432/FP_TesterDB -f d:\\Flight_DB\\DB_DUMPED.sql"
+
+    }
+     },
+    "DatabasePassword": "admin1",
+    "HourAndMinuteToClearLandedFlightsAndTickets": "00:30:00",
+    "NumberOfPossibleActiveFacades": {
+      "AnonymousFacade": 10000,
+      "CustomerFacade": 5000,
+      "AirlineFacade": 2500,
+      "AdminstratorFacade" :  100
+    }
+      
+
+    
+  }
+  
+

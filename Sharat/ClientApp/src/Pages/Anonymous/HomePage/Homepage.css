@@ -1,0 +1,60 @@
+﻿.review-component {
+    padding-top: 60px;
+}
+.readme-text-sec {
+    margin: 5% 0%;
+}
+.placebo-user-sec {
+    border: 3px solid #ECECF3;
+    background-color: #F7F7FC;
+    border-radius: 15px;
+    box-shadow: 1px 3px;
+    margin: 5% 0;
+    padding: 1%;
+}
+.placebo-side-note {
+    border: 3px solid #ECECF3;
+    background-color: rgb(248, 215, 218);
+    border-radius: 15px;
+    margin: 4% 0;
+    padding: 3% 2%;
+}
+.placebo-user-title {
+    font-size: 20px;
+    text-align:center;
+}
+.placebo-user-loginfo {
+    padding: 1px;
+}
+.placebo-user-fieldtext {
+    font-size: 20px;
+}
+.placebo-user-fieldcap {
+    color: #777790;
+}
+.placebo-user-field {
+    text-align: center;
+}
+.readme-comp {
+    max-width: 25%;
+    position: relative;
+    left: 3%;
+}
+.drop-comp {
+    padding: 0% 4%;
+}
+.readme-drop-btn {
+    font-size: 40px;
+    border: 3px solid #ECECF3;
+    background-color: #F7F7FC;
+    border-radius: 15px;
+    box-shadow: 4px 6px;
+}
+.mouse-img {
+    height: 70px;
+    padding: 0% 5%;   
+}
+.readme-drop-btn-text {
+    text-align: center;
+    padding: 1% 0%;
+}

@@ -1,0 +1,28 @@
+﻿.intro-text{
+    padding-left:100px;
+    padding-right:100px;
+    font-size:17px;
+    text-align:justify;
+}
+.techtab {
+    
+    box-shadow: 4px 7px;
+}
+.small-title {
+    text-align:center;
+    font-size:30px;
+    padding-bottom:18px;
+}
+.sec {
+    text-align: center;
+    padding: 10px 100px 20px 100px;
+    font-size:15px;
+}
+.smaller-title {
+    text-decoration: underline;
+    font-size: 20px;
+    font-weight: 900;
+}
+.licomp {
+    padding-bottom:25px;
+}
