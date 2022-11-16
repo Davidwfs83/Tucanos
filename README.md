@@ -3,7 +3,7 @@
 <div align="center">
 <h3 align="center">Tucanos</h3>
   <a href="https://tucanos.azurewebsites.net/">
-    <img src="asp/ClientApp/src/images/logo.png" alt="Logo" width="80" height="80">
+    <img src="asp/ClientApp/src/images/logo.png" alt="Logo" width="200" height="200">
   </a>
 </div>
 
