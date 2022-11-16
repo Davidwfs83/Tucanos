@@ -1,9 +1,9 @@
 <a name="readme-top"></a>
 
 <div align="center">
-<h3 align="center"><a href="https://tucanos.azurewebsites.net/">Tucanos</a></h3>
-  <a href="https://github.com/Davidwfs83/Tucanos/tree/master/asp/ClientApp/src/">
-    <img src="images/logo.png" alt="Logo" width="80" height="80">
+<h3 align="center">Tucanos</h3>
+  <a href="https://tucanos.azurewebsites.net/">
+    <img src="https://github.com/Davidwfs83/Tucanos/tree/master/asp/ClientApp/src/images/logo.png" alt="Logo" width="80" height="80">
   </a>
 </div>
 
@@ -100,12 +100,12 @@ Linkedin - https://www.linkedin.com/in/david-waismann-743047244/
 
 ## Extra Features
 
-\*\* Testing DLL - A DLL dedicated to continuously test the communication between the Server and Database.
+* Testing DLL - A DLL dedicated to continuously test the communication between the Server and Database.
 
-\*\* Main admin Developer Panel - A UI panel that provides the main admin the ability to manipulate
+* Main admin Developer Panel - A UI panel that provides the main admin the ability to manipulate
 all the entities presented in the app and to generate dummy data.
 
-- Worker Threads - Each of those threads wakes up every predetermined interval and perform some
+* Worker Threads - Each of those threads wakes up every predetermined interval and perform some
   sort of maintenance job. Examples: Running the Testing DLL, Removing Old Tickets and Flights, Generating
   New Dummy Data.
 
